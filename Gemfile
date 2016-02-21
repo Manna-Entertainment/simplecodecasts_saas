@@ -7,6 +7,10 @@ gem 'rails', '4.1.0'
 gem 'sqlite3', group: [:development, :test]
 
 #Use postresql as the database for the production
+group :production do 
+   gems 'pg'
+   gems 'rails_12factor'
+end
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '4.0.3'
