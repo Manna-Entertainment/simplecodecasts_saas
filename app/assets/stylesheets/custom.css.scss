@@ -1,0 +1,17 @@
+//"bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+//stuff added for the Font Awesome Gem
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+.navbar {
+    // Gradient from - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#feccb1+0,f17432+56,ea5507+73,fb955e+100
+background: #feccb1; /* Old browsers */
+background: -moz-linear-gradient(top,  #feccb1 0%, #f17432 56%, #ea5507 73%, #fb955e 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #feccb1 0%,#f17432 56%,#ea5507 73%,#fb955e 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #feccb1 0%,#f17432 56%,#ea5507 73%,#fb955e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#fb955e',GradientType=0 ); /* IE6-9 */
+
+}
