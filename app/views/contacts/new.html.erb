@@ -1,12 +1,18 @@
 <div class="row">
     <%= form_for @contact do |f| %>
-        <%= f.label :name %>
-        <%= f.text_field :name %>
+        <div class="form-group">
+            <%= f.label :name %>
+            <%= f.text_field :name %>
+        </div>
         
-        <%= f.label :email %>
-        <%= f.email_field :email %>
+        <div class="form-group">
+            <%= f.label :email %>
+            <%= f.email_field :email %>
+        </div>
         
-        <%= f.label :comments %>
-        <%= f.text_area :comments %>
+        <div class="form-group">
+            <%= f.label :comments %>
+            <%= f.text_area :comments %>
+        </div>
     <% end %>
 </div>
