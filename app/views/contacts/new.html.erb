@@ -1,3 +1,11 @@
+<style>
+    img {
+	padding: 2px;
+	margin: 30px;
+	border: 7px solid orange;
+}
+</style>
+
 <div class="text-center">
 <h1>Contact Form</h1>
 </div>
@@ -20,6 +28,7 @@
                     <%= f.label :comments %>
                     <%= f.text_area :comments, class: 'form-control' %>
                 </div>
+                <div class="col-sm-offset-4 col-sm-4 col-xs-offset-4 text-center">
                 <%= f.submit 'Submit', class: 'btn btn-warning' %>
             <% end %>
         </div>
@@ -27,6 +36,6 @@
 </div>
 
 <div class ="text-center">
-    <br><br>
     <img src="http://thumbnails.hulu.com/13/747/59927_512x288_generated__kBczNxdJEkS-YCMKRwTLVQ.jpg">
 </div>
+ <!--"col-xs-6 col-md-4"-->
