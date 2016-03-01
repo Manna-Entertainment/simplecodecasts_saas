@@ -7,6 +7,7 @@
 @import "font-awesome";
 
 .navbar {
+color: white !important;
     // Gradient from - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#feccb1+0,f17432+56,ea5507+73,fb955e+100
 background: #feccb1; /* Old browsers */
 background: -moz-linear-gradient(top,  #feccb1 0%, #f17432 56%, #ea5507 73%, #fb955e 100%); /* FF3.6-15 */
@@ -14,4 +15,24 @@ background: -webkit-linear-gradient(top,  #feccb1 0%,#f17432 56%,#ea5507 73%,#fb
 background: linear-gradient(to bottom,  #feccb1 0%,#f17432 56%,#ea5507 73%,#fb955e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#fb955e',GradientType=0 ); /* IE6-9 */
 
+}
+
+.navbar .nav > li > a {
+    float: none;
+    color: #FFFFFF;
+    // background-color: #002E36;
+}
+.navbar .nav > li > a:hover {
+    float: none;
+    color: #2D4BFF;
+    // background-color: #5FC8D6;
+}
+
+.navbar-default .navbar-brand {
+  color: #FFFFFF;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #2D4BFF;
+//   background-color: transparent;
 }
