@@ -20,6 +20,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', end
 .navbar .nav > li > a {
     float: none;
     color: #FFFFFF;
+    font-size: 26px;
     // background-color: #002E36;
 }
 .navbar .nav > li > a:hover {
@@ -30,6 +31,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', end
 
 .navbar-default .navbar-brand {
   color: #FFFFFF;
+  font-size: 26px;
+  position: relative;
+  bottom: 4px;
 }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {

@@ -4,6 +4,12 @@
 	margin: 30px;
 	border: 7px solid orange;
 }
+
+#SubmitButton {
+    position: relative;
+    bottom: 16px;
+}
+
 </style>
 
 <div class="text-center">
@@ -28,7 +34,7 @@
                     <%= f.label :comments %>
                     <%= f.text_area :comments, class: 'form-control' %>
                 </div>
-                <div class="col-sm-offset-4 col-sm-4 col-xs-offset-4 text-center">
+                <div id = "SubmitButton" class="col-sm-offset-4 col-sm-4 col-xs-offset-4 text-center">
                 <%= f.submit 'Submit', class: 'btn btn-warning' %>
             <% end %>
         </div>
