@@ -7,6 +7,9 @@
 @import "font-awesome";
 
 .navbar {
+margin-left: auto;
+margin-right: auto;
+width: 100%;  
 color: white !important;
     // Gradient from - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#feccb1+0,f17432+56,ea5507+73,fb955e+100
 background: #feccb1; /* Old browsers */
@@ -20,7 +23,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', end
 .navbar .nav > li > a {
     float: none;
     color: #FFFFFF;
-    font-size: 26px;
+    font-size: 22px;
     // background-color: #002E36;
 }
 .navbar .nav > li > a:hover {
@@ -31,7 +34,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', end
 
 .navbar-default .navbar-brand {
   color: #FFFFFF;
-  font-size: 26px;
+  font-size: 22px;
   position: relative;
   bottom: 4px;
 }
@@ -50,13 +53,8 @@ body {
     // background-color: white;
 }
 
-.well {
-    min-height: 21px;
-    padding: 28px;
-    margin-bottom: 20px;
-    background-color: whitesmoke;
-    border: 1px solid #e3e3e3;
-    border-radius: 8px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+.navbar-btn {
+    border-radius: 16px;
+    padding: 2px 25px;
+    font-size: 20px;
 }

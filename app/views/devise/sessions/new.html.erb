@@ -1,4 +1,36 @@
+<!--This is the New File for the Log In Page-->
+
 <style>
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;  
+	padding: 2px;
+	margin: 15px;
+	border: 7px solid orange;
+}
+
+#SignUp {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; 
+    position: relative;
+    bottom: -3px;
+    right: 0px;
+    padding: 10px;
+    
+}
+
+#LogIn {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; 
+    position: relative;
+    top: 4px;
+    left: 1px;
+    padding: 0px;
+}
 
 .well {
     margin-left: auto;
@@ -38,12 +70,20 @@
           </div>
         <% end -%>
       
-        <div class="actions form-group">
-          <%= f.submit "Log in", class: 'btn btn-primary' %>
+        <div id="LogIn" class="actions form-group">
+          <%= f.submit "Confirm Log In", class: 'btn btn-primary btn-lg btn-block' %>
+        </div>
+        
+        <div id= "SignUp" class="form-group btn btn-success btn-lg btn-block actions col-sm-offset-4 col-sm-4 col-xs-offset-4 text-center">
+	          <a href="/users/sign_up">Sign Up Page</a>
         </div>
       <% end %>
       
       <%= render "devise/shared/links" %>
+    </div>
   </div>
-  </div>
+</div>
+
+<div>
+  <img src="http://cdn.pcwallart.com/images/sasuke-uchiha-susanoo-wallpaper-wallpaper-1.jpg">
 </div>
