@@ -43,7 +43,7 @@ gem 'devise', '3.4.1'
 # Use Stripe for Handling Payments
 gem 'stripe', '1.16.1'
 
-# Use Figaro to hide secret keys
+# Use Figaro to hide secret keys (Sensitive Information from Public Sites like GitHub)
 gem 'figaro', '1.0.0'
 
 # Use ActiveModel has_secure_password
