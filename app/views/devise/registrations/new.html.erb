@@ -1,29 +1,77 @@
-<h2>Sign up</h2>
+<!--Not the same "new.html.erb" file as the one for the emails.-->
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+<style>
+    img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;  
+	padding: 2px;
+	margin: 15px;
+	border: 7px solid orange;
+}
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+#SignUp {
+    position: relative;
+    bottom: 12px;
+    padding: 2px;
+    
+}
+
+.well {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;  
+    min-height: 21px;
+    padding: 28px;
+    margin-bottom: 20px;
+    background-color: #E0BD9A;
+    border: 1px solid #e3e3e3;
+    border-radius: 8px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+</style>
+
+<div class: "row">
+  <div class="col-md-4 col-md-offset-4">
+    <div class= "well">
+      <h2>Sign up</h2>
+      
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+        <%= devise_error_messages! %>
+      
+        <div class="field form-group">
+          <%= f.label :email %><br />
+          <%= f.email_field :email, autofocus: true, class: 'form-control' %>
+        </div>
+      
+        <div class="field form-group">
+          <%= f.label :password %>
+          <% if @validatable %>
+          <em>(<%= @minimum_password_length %> characters minimum)</em>
+          <% end %><br />
+          <%= f.password_field :password, autocomplete: "off", class: 'form-control' %>
+        </div>
+      
+        <div class="field form-group">
+          <%= f.label :password_confirmation %><br />
+          <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control' %>
+        </div>
+      
+        <div id ="SignUp" class="form-group actions col-sm-offset-4 col-sm-4 col-xs-offset-4 text-center">
+          <%= f.submit "Sign up", class: 'btn btn-primary form-control' %>
+        </div>
+        
+        <div class="form-group btn btn-info actions col-sm-offset-4 col-sm-4 col-xs-offset-4 text-center">
+	        <a href="/users/sign_in">Log in</a>
+        </div>
+      <% end %>
+    <%= render "devise/shared/links" %>
+    </div>
   </div>
+</div>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @validatable %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+<div>
+  <img src="http://pre11.deviantart.net/49d2/th/pre/i/2014/125/e/f/jiraiya_and_naruto___teacher_and_student_by_dennisstelly-d6w7d3r.png"  width = "868" height ="725">
+</div>
