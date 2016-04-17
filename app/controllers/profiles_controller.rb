@@ -4,7 +4,7 @@ class ProfilesController < ApplicationController
     @user = User.find( params[:user_id] )
     @profile = @user.build_plan
     @profile = Profile.new
-    end
+  end
   
   def create
     @user = User.find( params[:user_id])
