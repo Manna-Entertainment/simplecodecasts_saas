@@ -1,4 +1,8 @@
 class ProfilesController < ApplicationController
+  
+  def build_profile
+  end
+  
   def new
     # form where a user can fill out their own profile.
     @user = User.find( params[:user_id] )
